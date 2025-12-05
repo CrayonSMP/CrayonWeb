@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint - CrayonSMP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #ff0040;
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-light: #e5e5e5;
+            --text-muted: #a0a0a0;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: white; /* Headings usually white */
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        strong {
+            color: var(--text-light);
+        }
+        address {
+            font-style: normal;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff5d7a;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: var(--bg-card);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+        .footer-link:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background-color: var(--accent-color); border-radius: 10px; border: 2px solid var(--bg-dark); }
+        ::-webkit-scrollbar-thumb:hover { background-color: #e00038; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar px-4 md:px-8 py-3">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="flex items-center gap-2 text-xl font-bold text-white hover:text-gray-200 transition">
+            <img src="logo.png"
+                 alt="CrayonSMP Logo Klein"
+                 class="w-8 h-8 rounded-full"
+                 onerror="this.onerror=null; this.src='https://placehold.co/32x32/1e1e1e/e0e0e0?text=C';">
+            <span>Crayon<span class="accent-text">SMP</span></span> - Impressum</a>
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="/#about" class="text-gray-300 hover:text-white transition font-medium">About</a>
+            <a href="/#how-it-works" class="text-gray-300 hover:text-white transition font-medium">How it Works</a>
+            <a href="/" class="text-gray-300 hover:text-white transition font-medium">Rules</a>
+            <a href="/#plugins" class="text-gray-300 hover:text-white transition font-medium">Tech</a>
+            <a href="/#developers" class="text-gray-300 hover:text-white transition font-medium">Developers</a>
+            <a href="https://discord.gg/M2M6m3j2Qf" class="cta-button secondary text-sm py-2 px-4">
+                <i data-lucide="play-circle" class="w-4 h-4"></i>
+                <span>Join Now</span> </a>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 px-4 pb-4">
+        <a href="/#about" class="block text-gray-300 hover:text-white transition font-medium px-3 py-2 rounded-md hover:bg-gray-700">About</a>
+        <a href="/#how-it-works" class="block text-gray-300 hover:text-white transition font-medium px-3 py-2 rounded-md hover:bg-gray-700">How it Works</a>
+        <a href="/#plugins" class="block text-gray-300 hover:text-white transition font-medium px-3 py-2 rounded-md hover:bg-gray-700">Tech</a>
+        <a href="/#developers" class="block text-gray-300 hover:text-white transition font-medium px-3 py-2 rounded-md hover:bg-gray-700">Developers</a>
+        <a href="https://discord.gg/M2M6m3j2Qf" class="block cta-button secondary text-sm w-full mt-2"> <i data-lucide="play-circle" class="w-4 h-4"></i>
+            <span>Join Now</span>
+        </a>
+    </div>
+</nav>
+
+<div class="container" data-aos="fade-up">
+
+    <h1>Imprint / Legal Notice</h1>
+
+    <h2>Information according to § 5 DDG (German Digital Services Act)</h2>
+
+    <p>
+        Gianni-Finn Grollius<br>
+        Germany
+    </p>
+
+    <h2>Contact Information</h2>
+
+    <p>
+        PhoneNummber: +49 1512 3380931<br>
+        Private-Email: <a href="mailto:tamashiimon@gmail.com">TamashiiMon@gmail.com</a><br>
+        Organisatsion-Email: <a href="mailto:team@crayonsmp.com">team@crayonsmp.com</a><br>
+    </p>
+    <p class="text-gray-500 text-sm mt-1">
+        Please note that contacting us by email or via the provided phone number is usually the fastest method.
+    </p>
+
+    <h2>Responsible for journalistic-editorial content according to § 18 Abs. 2 MStV</h2>
+    <p>
+        Gianni-Finn Grollius<br>
+        Germany
+    </p>
+
+
+    <h2>EU Dispute Resolution</h2>
+    <p>
+        The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.
+    </p>
+    <p>
+        You can find our email address in the Imprint above.
+    </p>
+    <p>
+        We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+    </p>
+
+    <h2>Liability for Content</h2>
+    <p class="text-gray-500 text-sm">
+        As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to Section 7 (1) DDG. However, pursuant to Sections 8 to 10 DDG, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+    </p>
+    <p class="text-gray-500 text-sm">
+        Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific legal violation. If we become aware of such legal violations, we will remove this content immediately.
+    </p>
+
+    <h2>Liability for Links</h2>
+    <p class="text-gray-500 text-sm">
+        Our offering contains links to external third-party websites, the content of which we have no influence over. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.
+    </p>
+    <p class="text-gray-500 text-sm">
+        However, a permanent content check of the linked pages is not reasonable without concrete evidence of a legal violation. If we become aware of legal violations, we will remove such links immediately.
+    </p>
+
+    <h2>Copyright</h2>
+    <p class="text-gray-500 text-sm">
+        The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any form of commercialization of such material beyond the scope of copyright law shall require the prior written consent of its respective author or creator. Downloads and copies of this site are permitted only for private, non-commercial use.
+    </p>
+    <p class="text-gray-500 text-sm">
+        Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please notify us accordingly. If we become aware of legal violations, we will remove such content immediately.
+    </p>
+
+    <div class="text-center mt-8">
+        <a href="/" class="footer-link">Back to Homepage</a>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        try {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 50,
+                disable: 'mobile'
+            });
+        } catch (e) {
+            console.error("AOS initialization failed:", e);
+        }
+        try {
+            lucide.createIcons();
+        } catch (e) {
+            console.error("Lucide icons initialization failed:", e);
+        }
+    });
+</script>
+
+</body>
+</html>

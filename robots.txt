@@ -1,0 +1,7 @@
+# robots.txt file for https://crayonsmp.com/
+
+User-agent: *
+# Diese Regel gilt für alle Web-Robots (Crawler).
+
+Sitemap: https://crayonsmp.com/sitemap.xml
+
