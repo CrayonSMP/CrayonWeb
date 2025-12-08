@@ -219,7 +219,7 @@ function Home() {
             <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8">
               Passionate about Java and Minecraft? Help us shape the future of
               CrayonSMP! Contribute to our open-source{" "}
-              <strong className="text-pink-300">CrayonSystem</strong> on GitHub.
+              <strong className="text-pink-300">CrayonDefault</strong> on GitHub.
               Build features, squash bugs, and optimize the experience.
             </p>
             <a
