@@ -7,6 +7,7 @@ import {
   Info,
   HelpCircle,
   Code2,
+  Shield,
   Trophy,
   UsersRound,
 } from "lucide-react";
@@ -54,7 +55,7 @@ function Header() {
               <span>How it Works</span>
             </a>
             <Link to="/rules" className="navbar-link">
-              <Code2 className="w-4 h-4" />
+              <Shield className="w-4 h-4" />
               <span>Rules</span>
             </Link>
             <a href="/#plugins" className="navbar-link">
@@ -120,7 +121,7 @@ function Header() {
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
-              <Code2 className="w-5 h-5" />
+              <Shield className="w-5 h-5" />
               <span>Rules</span>
             </Link>
             <a
