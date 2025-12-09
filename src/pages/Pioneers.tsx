@@ -26,10 +26,10 @@ function Pioneers() {
     {
       name: "Karma",
       nickname: "@karma2121",
-      role: "Hidden Admin & Streamer",
+      role: "Streamer",
       image: "/media/team-pf/karma.png",
       quote: "Open for collabs",
-      color: "#f05689",
+      color: "#9735f2",
       socials: [
         {
           icon: Twitch,
@@ -61,10 +61,10 @@ function Pioneers() {
     {
       name: "ezTxmMC",
       nickname: "@eztxmmc",
-      role: "Developer, YouTuber, Streamer",
+      role: "YouTuber",
       image: "/media/team-pf/ezTxmMC.png",
       quote: "Developing and also playing...",
-      color: "#75ebee",
+      color: "#9735f2",
       socials: [
         {
           icon: Twitch,
@@ -84,10 +84,10 @@ function Pioneers() {
     {
       name: "Tamashii",
       nickname: "@tamashiimon",
-      role: "Founder",
+      role: "Creator",
       image: "/media/team-pf/tamashii.png",
       quote: "I am not only a Staff but also a Player.",
-      color: "#FF0040",
+      color: "#C0C0C0",
       socials: [
         {
           icon: Twitch,
@@ -104,7 +104,7 @@ function Pioneers() {
     {
       name: "Ahmed",
       nickname: "@theahmedhd",
-      role: "Member",
+      role: "Player",
       image: "/media/streamer-pf/Ahmed.gif",
       quote: "Burns like fire",
       color: "#4d4848",
@@ -120,6 +120,31 @@ function Pioneers() {
   ];
 
   const sponsors = [
+    {
+      name: "Syntaxjason",
+      nickname: "@syntaxjason",
+      role: "Partner",
+      image: "/media/team-pf/SyntaxJson.png",
+      quote: "n/a",
+      color: "#3498db",
+      socials: [
+        {
+          icon: Globe,
+          url: "https://bluenet-hosting.com",
+          label: "BlueNet-Hosting",
+        },
+        {
+          icon: Globe,
+          url: "https://astranox.de",
+          label: "Astranox",
+        },
+        {
+          icon: Gamepad2,
+          url: "https://steamcommunity.com/id/DraconyxGroup",
+          label: "Steam",
+        },
+      ],
+    },
     {
       name: "Tikomatura",
       nickname: "@Ynujasha",

@@ -218,7 +218,7 @@ function Home() {
                 account needed for submissions).
               </p>
               <a
-                href="https://nexomaker.com/"
+                href="https://www.nexomaker.com/ref/CRAYONSMP"
                 className="cta-button secondary inline-flex"
               >
                 <Pencil className="w-5 h-5" />

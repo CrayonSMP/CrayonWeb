@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar backdrop-blur-lg">
       <div className="container mx-auto px-4 md:px-8">
         <div className="navbar-content">
           {/* Logo */}

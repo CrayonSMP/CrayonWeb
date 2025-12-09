@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { MessageCircle, Crown, Shield, Code, Users } from "lucide-react";
+import { MessageCircle, Shield, Code, Users } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,11 +13,11 @@ function Team() {
     });
   }, []);
 
-  const founders = [
+  const admins = [
     {
       name: "Tamashii",
       nickname: "@tamashiimon",
-      role: "Founder & Developer",
+      role: "Founder",
       image: "/media/team-pf/tamashii.png",
       quote: "I love making things that do not exist.",
       color: "#ff0040",
@@ -25,14 +25,11 @@ function Team() {
     {
       name: "Qeonix",
       nickname: "@qeonix__",
-      role: "Founder & Designer",
+      role: "Founder",
       image: "/media/team-pf/jonathan.png",
       quote: "n/a",
       color: "#ff0040",
     },
-  ];
-
-  const admins = [
     {
       name: "Fotrapsy",
       nickname: "@fotrapsy",
@@ -58,15 +55,7 @@ function Team() {
       role: "Developer",
       image: "/media/team-pf/ezTxmMC.png",
       quote: "Developing...",
-      color: "#75ebee",
-    },
-    {
-      name: "Syntaxjason",
-      nickname: "@syntaxjason",
-      role: "Partner",
-      image: "/media/team-pf/SyntaxJson.png",
-      quote: "n/a",
-      color: "#3498db",
+      color: "#33caca",
     },
   ];
 
@@ -89,63 +78,13 @@ function Team() {
       </section>
 
       <div className="container mx-auto px-4 pb-16">
-        {/* Founders Section */}
+        {/* Administration Section */}
         <section className="mb-20">
           <div className="team-section-header" data-aos="fade-up">
-            <Crown className="mt-8 w-8 h-8 text-[#ff0040]" />
-            <h2 className="text-3xl md:text-4xl font-bold">Founders</h2>
-            <p className="text-gray-400 mt-2">
-              Visionaries who brought CrayonSMP to life
-            </p>
-          </div>
-
-          <div className="team-grid-founders">
-            {founders.map((member, index) => (
-              <div
-                key={member.nickname}
-                className="team-card-enhanced"
-                data-aos="zoom-in"
-                data-aos-delay={index * 100}
-              >
-                <div
-                  className="team-card-glow"
-                  style={{ backgroundColor: member.color }}
-                ></div>
-                <div
-                  className="team-card-rank-badge"
-                  style={{ backgroundColor: member.color }}
-                >
-                  {member.role}
-                </div>
-                <div className="team-card-avatar-wrapper">
-                  <img
-                    src={member.image}
-                    alt={`Profile Picture of ${member.name}`}
-                    className="team-card-avatar"
-                    style={{ borderColor: member.color }}
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src =
-                        "https://placehold.co/120x120/ff0040/ffffff?text=?";
-                    }}
-                  />
-                </div>
-                <h3 className="team-card-name">{member.name}</h3>
-                <p className="team-card-nickname">{member.nickname}</p>
-                <div className="team-card-divider"></div>
-                <p className="team-card-quote">"{member.quote}"</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Admins Section */}
-        <section className="mb-20">
-          <div className="team-section-header" data-aos="fade-up">
-            <Shield className="w-8 h-8 text-[#f05689]" />
+            <Shield className="mt-8 w-8 h-8 text-[#ff0040]" />
             <h2 className="text-3xl md:text-4xl font-bold">Administration</h2>
             <p className="text-gray-400 mt-2">
-              Guardians of the server, ensuring smooth operations
+              Leadership team managing and developing CrayonSMP
             </p>
           </div>
 
@@ -176,7 +115,7 @@ function Team() {
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src =
-                        "https://placehold.co/120x120/f05689/ffffff?text=?";
+                        "https://placehold.co/120x120/ff0040/ffffff?text=?";
                     }}
                   />
                 </div>
