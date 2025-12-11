@@ -33,7 +33,7 @@ function Pioneers() {
       socials: [
         {
           icon: Twitch,
-          url: "https://www.twitch.tv/karma2121",
+          url: "https://www.twitch.tv/karma2121_",
           label: "Twitch",
         },
       ],
