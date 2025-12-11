@@ -59,6 +59,26 @@ function Pioneers() {
       ],
     },
     {
+      name: "Liondro",
+      nickname: "@Liondrotv",
+      role: "Streamer",
+      image: "/media/streamer-pf/Liondro.png",
+      quote: "A guy with a mask",
+      color: "#9735f2",
+      socials: [
+        {
+          icon: Twitch,
+          url: "https://m.twitch.tv/liondro",
+          label: "Twitch",
+        },
+        {
+          icon: Youtube,
+          url: "https://youtube.com/@liondrovt?si=g6aRVpt1HR1m-frj",
+          label: "YouTube",
+        },
+      ],
+    },
+    {
       name: "ezTxmMC",
       nickname: "@eztxmmc",
       role: "YouTuber",
