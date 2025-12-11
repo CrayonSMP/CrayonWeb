@@ -154,6 +154,15 @@ function Pioneers() {
       quote: "There is not enough stupid in the world to describe me.",
       color: "#C0C0C0",
       socials: [],
+    },
+    {
+      name: "Admiralbiber",
+      nickname: "@Biber_2005",
+      role: "Member",
+      image: "/media/streamer-pf/Admiralbiber.png",
+      quote: "I love the war",
+      color: "#4d4848",
+      socials: [],
     }
   ];
 
