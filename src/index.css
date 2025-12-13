@@ -1570,6 +1570,25 @@ h6 {
   }
 }
 
+.assets-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .assets-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .assets-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 /* Enhanced Pioneer Cards */
 .pioneer-card-enhanced {
   background: linear-gradient(145deg, #242424, #1a1a1a);

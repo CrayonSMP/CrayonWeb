@@ -1,0 +1,216 @@
+
+import {
+    Gamepad2,
+    Globe,
+    Twitch, Youtube
+
+} from "lucide-react";
+
+export const contentCreators = [
+    {
+        name: "Karma",
+        nickname: "@karma2121",
+        role: "Streamer",
+        image: "/media/team-pf/karma.png",
+        quote: "Open for collabs",
+        color: "#9735f2",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://www.twitch.tv/karma2121_",
+                label: "Twitch",
+            },
+        ],
+    },
+    {
+        name: "Giannicraft",
+        nickname: "@Giannicrafter",
+        role: "Streamer",
+        image: "/media/streamer-pf/GianniCrafter.png",
+        quote: "I am a femboy who likes trains",
+        color: "#9735f2",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://www.twitch.tv/giannicrafter",
+                label: "Twitch",
+            },
+            {
+                icon: Youtube,
+                url: "https://www.youtube.com/@Giannicrafter",
+                label: "YouTube",
+            },
+        ],
+    },
+    {
+        name: "Liondro",
+        nickname: "@Liondro_tv",
+        role: "Streamer",
+        image: "/media/streamer-pf/Liondro.png",
+        quote: "A guy with a mask",
+        color: "#9735f2",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://m.twitch.tv/liondro_",
+                label: "Twitch",
+            },
+            {
+                icon: Youtube,
+                url: "https://youtube.com/@liondrovt?si=g6aRVpt1HR1m-frj",
+                label: "YouTube",
+            },
+        ],
+    },
+    {
+        name: "ezTxmMC",
+        nickname: "@eztxmmc",
+        role: "YouTuber",
+        image: "/media/team-pf/ezTxmMC.png",
+        quote: "Developing and also playing...",
+        color: "#9735f2",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://www.twitch.tv/eztxmmc",
+                label: "Twitch",
+            },
+            {
+                icon: Youtube,
+                url: "https://www.youtube.com/@ezTxmMC",
+                label: "YouTube",
+            },
+        ],
+    },
+    {
+        name: "Shadow_CatNinja",
+        nickname: "@Shadow_CatNinja",
+        role: "Streamer",
+        image: "/media/streamer-pf/Shadow_CatNinja.png",
+        quote: "Sneaky as a cat, fast as a ninja.",
+        color: "#9735f2",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://www.twitch.tv/shadow_catninja",
+                label: "Twitch",
+            },
+            {
+                icon: Youtube,
+                url: "https://www.youtube.com/@Shadow_CatNinja",
+                label: "YouTube",
+            },
+        ],
+    },
+    {
+        name: "Ahmed",
+        nickname: "@theahmedhd",
+        role: "Streamer",
+        image: "/media/streamer-pf/Ahmed.gif",
+        quote: "Burns like fire",
+        color: "#9735f2",
+        socials: [
+            { icon: Twitch, url: "https://twitch.com/theahmedhd", label: "Twitch" },
+            {
+                icon: Youtube,
+                url: "https://youtube.com/@theahmedhd.?si=rv5ZFxgBb0oHb44o",
+                label: "YouTube",
+            },
+        ],
+    },
+];
+
+export const members = [
+    {
+        name: "Tamashii",
+        nickname: "@tamashiimon",
+        role: "Founder",
+        image: "/media/team-pf/tamashii.png",
+        quote: "I am not only a Staff but also a Player.",
+        color: "#C0C0C0",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://www.twitch.tv/tamashiimon",
+                label: "Twitch",
+            },
+            {
+                icon: Youtube,
+                url: "https://www.youtube.com/@TamashiiMon",
+                label: "YouTube",
+            },
+        ],
+    },
+    {
+        name: "Qeonix",
+        nickname: "@qeonix__",
+        role: "Founder",
+        image: "/media/team-pf/jonathan.png",
+        quote: "n/a",
+        color: "#C0C0C0",
+        socials: [],
+    },
+    {
+        name: "Fotrapsy",
+        nickname: "@fotrapsy",
+        role: "Hidden Admin",
+        image: "/media/team-pf/fotrapsy.png",
+        quote: "There is not enough stupid in the world to describe me.",
+        color: "#C0C0C0",
+        socials: [],
+    },
+    {
+        name: "Admiralbiber",
+        nickname: "@Biber_2005",
+        role: "Member",
+        image: "/media/streamer-pf/Admiralbiber.png",
+        quote: "I love the war",
+        color: "#4d4848",
+        socials: [],
+    }
+];
+
+export const sponsors = [
+    {
+        name: "SyntaxJason",
+        nickname: "@syntaxjason",
+        role: "Partner",
+        image: "/media/team-pf/SyntaxJson.png",
+        quote: "n/a",
+        color: "#3498db",
+        socials: [
+            {
+                icon: Globe,
+                url: "https://bluenet-hosting.com",
+                label: "BlueNet-Hosting",
+            },
+            {
+                icon: Globe,
+                url: "https://astranox.de",
+                label: "Astranox",
+            },
+            {
+                icon: Gamepad2,
+                url: "https://steamcommunity.com/id/DraconyxGroup",
+                label: "Steam",
+            },
+        ],
+    },
+    {
+        name: "Tikomatura",
+        nickname: "@Ynujasha",
+        role: "Former Sponsor",
+        image: "/media/streamer-pf/Ynujasha.png",
+        quote: "Day 2 Supporter\nHMU for cheap server hosting",
+        color: "#3498db",
+        socials: [
+            { icon: Globe, url: "https://cops.bio/1", label: "Crops Bio" },
+            {
+                icon: Gamepad2,
+                url: "https://steamcommunity.com/id/Tikomatura",
+                label: "Steam",
+            },
+            { icon: Globe, url: "https://rustymain.eu/", label: "RustyMain" },
+        ],
+    },
+];
