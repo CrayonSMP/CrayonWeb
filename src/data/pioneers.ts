@@ -1,5 +1,6 @@
 
 import {
+    CodeIcon,
     Gamepad2,
     Globe,
     Twitch, Youtube
@@ -60,6 +61,21 @@ export const contentCreators = [
                 url: "https://youtube.com/@liondrovt?si=g6aRVpt1HR1m-frj",
                 label: "YouTube",
             },
+        ],
+    },
+    {
+        name: "R1okano",
+        nickname: "@riokano",
+        role: "Streamer",
+        image: "/media/streamer-pf/R1okano.png",
+        quote: "A fluffy guy on Twitch",
+        color: "#9735f2",
+        socials: [
+            {
+                icon: Twitch,
+                url: "https://www.twitch.tv/R1okano",
+                label: "Twitch",
+            }
         ],
     },
     {
@@ -167,6 +183,21 @@ export const members = [
         quote: "I love the war",
         color: "#4d4848",
         socials: [],
+    },
+    {
+        name: "Villagerzock",
+        nickname: "@Villagerzock",
+        role: "Creator",
+        image: "/media/streamer-pf/Villagerzock.png",
+        quote: " I dont use Arch",
+        color: "#4d4848",
+        socials: [
+            {
+                icon: CodeIcon,
+                url: "https://modrinth.com/organization/village-of-mods",
+                label: "Mods",
+            }
+        ],
     }
 ];
 
