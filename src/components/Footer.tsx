@@ -9,7 +9,7 @@ import {
   Home,
   Users,
   Trophy,
-  Pencil,
+  Pencil, FileIcon,
 } from "lucide-react";
 
 function Footer() {
@@ -117,6 +117,11 @@ function Footer() {
                 >
                   <Activity className="w-4 h-4" /> Server Status
                 </a>
+              </li>
+              <li>
+                <Link to="/assets" className="footer-link">
+                  <FileIcon className="w-4 h-4" /> Assets
+                </Link>
               </li>
             </ul>
           </div>
