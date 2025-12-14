@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyBwUhcYEse4DQIxrrgJTg8A5CZ2iIiagTs",
+    apiKey: "",
 
     authDomain: "crayonsmp.firebaseapp.com",
 
@@ -12,11 +12,11 @@ const firebaseConfig = {
 
     storageBucket: "crayonsmp.firebasestorage.app",
 
-    messagingSenderId: "73755281978",
+    messagingSenderId: "",
 
-    appId: "1:73755281978:web:0ba52aaa249cc391270303",
+    appId: "",
 
-    measurementId: "G-4V48128FF0"
+    measurementId: ""
 
 };
 
