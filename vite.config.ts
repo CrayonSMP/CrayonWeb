@@ -19,10 +19,6 @@ export default defineConfig({
         team: resolve(__dirname, "team/index.html"),
         admin: resolve(__dirname, "admin/index.html"),
         "admin/login": resolve(__dirname, "admin/login/index.html"),
-        "admin/changelog-editor": resolve(
-          __dirname,
-          "admin/changelog-editor/index.html"
-        ),
         "admin/changelog/editor": resolve(
           __dirname,
           "admin/changelog/editor/index.html"
