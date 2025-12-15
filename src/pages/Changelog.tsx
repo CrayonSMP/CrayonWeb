@@ -1,5 +1,3 @@
-// src/pages/Changelog.tsx
-
 import React, { useState, useEffect, useMemo } from "react";
 import {
   List,
@@ -26,7 +24,8 @@ const IconMap: Record<ChangelogIcon, React.ElementType> = {
   Allgemein: GitBranch,
 };
 
-const filterCategories: ChangelogCategory[] = [
+const filterCategories: (ChangelogCategory | "Alle")[] = [
+  "Alle",
   "Allgemein",
   "Minecraft Server",
   "Website",
@@ -43,8 +42,9 @@ const Changelog = () => {
     });
   }, []);
 
-  const [activeCategory, setActiveCategory] =
-    useState<ChangelogCategory>("Allgemein");
+  const [activeCategory, setActiveCategory] = useState<
+    ChangelogCategory | "Alle"
+  >("Alle");
   const [changelogs, setChangelogs] = useState<ChangelogEntry[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -80,13 +80,13 @@ const Changelog = () => {
   }, []);
 
   const filteredChangelogs = useMemo(() => {
-    if (activeCategory === "Allgemein") {
-      return changelogs;
-    }
-    return changelogs.filter((log) => log.category.includes(activeCategory));
+    if (activeCategory === "Alle") return changelogs;
+    return changelogs.filter((log) =>
+      log.category.includes(activeCategory as ChangelogCategory)
+    );
   }, [changelogs, activeCategory]);
 
-  const handleCategoryChange = (category: ChangelogCategory) => {
+  const handleCategoryChange = (category: ChangelogCategory | "Alle") => {
     setActiveCategory(category);
   };
 

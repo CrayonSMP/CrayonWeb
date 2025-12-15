@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -8,9 +6,8 @@ import Imprint from "./pages/Imprint";
 import Pioneers from "./pages/Pioneers";
 import Team from "./pages/Team";
 import Assets from "./pages/Assets";
-import Changelog from "./pages/Changelog.tsx";
-import Login from "./pages/admin/Login.tsx";
-import ChangelogCreator from "./pages/admin/ChangelogCreator.tsx";
+import Changelog from "./pages/Changelog";
+import Admin from "./pages/admin/Admin";
 import { AuthProvider } from "./context/AuthContext";
 import NotFound from "./pages/NotFound";
 
@@ -27,13 +24,8 @@ function App() {
             <Route path="team" element={<Team />} />
             <Route path="assets" element={<Assets />} />
             <Route path="changelog" element={<Changelog />} />
-            <Route path="admin/login" element={<Login />} />
-            <Route
-              path="admin/changelog-creator"
-              element={<ChangelogCreator />}
-            />
+            <Route path="admin/*" element={<Admin />} />
           </Route>
-          <Route path="/admin/*" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

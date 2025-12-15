@@ -1,28 +1,26 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import {
+  initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
+} from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-
-    apiKey: "AIzaSyBwUhcYEse4DQIxrrgJTg8A5CZ2iIiagTs",
-
-    authDomain: "crayonsmp.firebaseapp.com",
-
-    projectId: "crayonsmp",
-
-    storageBucket: "crayonsmp.firebasestorage.app",
-
-    messagingSenderId: "73755281978",
-
-    appId: "1:73755281978:web:0ba52aaa249cc391270303",
-
-    measurementId: "G-4V48128FF0"
-
+  apiKey: "AIzaSyCLVqaI2VAQwIjUL-2QiNqKxK3RfMiK7Vk",
+  authDomain: "dev-crayonsmp.firebaseapp.com",
+  projectId: "dev-crayonsmp",
+  storageBucket: "dev-crayonsmp.firebasestorage.app",
+  messagingSenderId: "541054010082",
+  appId: "1:541054010082:web:946ef97ecbbe45efb414bb",
 };
-
-
 
 const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app);
+export const db = initializeFirestore(app, {
+  localCache: persistentLocalCache({
+    tabManager: persistentMultipleTabManager(),
+  }),
+});
+
 export const auth = getAuth(app);

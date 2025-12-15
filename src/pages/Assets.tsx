@@ -7,7 +7,7 @@ import {
 } from "../data/assets";
 
 import { FaDownload, FaFileArchive, FaFilePdf, FaImage } from "react-icons/fa";
-import { FileIcon } from "lucide-react"; // Icons für Header/Footer
+import { FileIcon, FileText } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -70,9 +70,10 @@ const Assets = () => {
     return null;
   };
 
-  {
-    /* const styleGuideAsset = assetData.find(a => a.id === 'styleguide-pdf'); */
-  }
+  // Find the style guide asset (adjust the condition as needed)
+  const styleGuideAsset = assetData.find((asset) =>
+    asset.name.toLowerCase().includes("style guide")
+  );
 
   return (
     <main className="flex-1 w-full max-w-6xl mx-auto px-4 md:px-8">
@@ -124,24 +125,22 @@ const Assets = () => {
         </div>
       </section>
 
-      {/*
-            <section className="section-card text-center mb-16" data-aos="fade-up">
-                <FileText className="w-12 h-12 mx-auto mb-4 text-[var(--accent-color)]" />
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Questions about Branding?
-                </h2>
-                <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
-                    If you require detailed guidelines, please consult our Style Guide.
-                </p>
-                <a
-                    href={styleGuideAsset ? styleGuideAsset['download-path'] : '#'}
-                    className="cta-button primary"
-                >
-                    <FileText className="w-5 h-5 mr-2" />
-                    <span>View Style Guide</span>
-                </a>
-            </section>
-            */}
+      <section className="section-card text-center mb-16" data-aos="fade-up">
+        <FileText className="w-12 h-12 mx-auto mb-4 text-(--accent-color)" />
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Questions about Branding?
+        </h2>
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+          If you require detailed guidelines, please consult our Style Guide.
+        </p>
+        <a
+          href={styleGuideAsset ? styleGuideAsset["download-path"] : "#"}
+          className="cta-button primary"
+        >
+          <FileText className="w-5 h-5 mr-2" />
+          <span>View Style Guide</span>
+        </a>
+      </section>
     </main>
   );
 };

@@ -10,6 +10,7 @@ import {
   Shield,
   Trophy,
   UsersRound,
+  Code,
 } from "lucide-react";
 
 function Header() {
@@ -57,6 +58,10 @@ function Header() {
             <Link to="/rules" className="navbar-link">
               <Shield className="w-4 h-4" />
               <span>Rules</span>
+            </Link>
+            <Link to="/changelog" className="navbar-link">
+              <Code className="w-4 h-4" />
+              <span>Changelog</span>
             </Link>
             <a href="/#plugins" className="navbar-link">
               <Code2 className="w-4 h-4" />
@@ -123,6 +128,14 @@ function Header() {
             >
               <Shield className="w-5 h-5" />
               <span>Rules</span>
+            </Link>
+            <Link
+              to="/changelog"
+              onClick={closeMobileMenu}
+              className="navbar-mobile-link"
+            >
+              <Code className="w-5 h-5" />
+              <span>Changelog</span>
             </Link>
             <a
               href="/#plugins"
