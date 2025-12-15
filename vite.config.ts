@@ -13,6 +13,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
+        changelog: resolve(__dirname, "changelog/index.html"),
         rules: resolve(__dirname, "rules/index.html"),
         imprint: resolve(__dirname, "imprint/index.html"),
         pioneers: resolve(__dirname, "pioneers/index.html"),
