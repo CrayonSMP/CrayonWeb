@@ -43,13 +43,13 @@ const categoryOptions: ChangelogCategory[] = [
   "Minecraft Server",
   "Website",
   "Discord",
-  "Allgemein",
+  "Generally",
 ];
 const iconOptions: ChangelogIcon[] = [
   "Server",
   "Globe",
   "MessageCircle",
-  "Allgemein",
+  "Generally",
 ];
 
 /* ---------- Helpers ---------- */
