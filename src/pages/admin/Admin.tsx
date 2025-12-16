@@ -21,7 +21,7 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-import { auth, db } from "../../firebase_dev";
+import { auth, db } from "../../firebase_prod";
 import { useAuth } from "../../context/AuthContext";
 import {
   LogIn,
