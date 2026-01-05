@@ -63,22 +63,22 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="footer-link">
+                <Link to="/team#" className="footer-link">
                   <Users className="w-4 h-4" /> Team
                 </Link>
               </li>
               <li>
-                <Link to="/pioneers" className="footer-link">
+                <Link to="/pioneers#" className="footer-link">
                   <Trophy className="w-4 h-4" /> Pioneers
                 </Link>
               </li>
               <li>
-                <Link to="/rules" className="footer-link">
+                <Link to="/rules#" className="footer-link">
                   <Shield className="w-4 h-4" /> Rules
                 </Link>
               </li>
               <li>
-                <Link to="/changelog" className="footer-link">
+                <Link to="/changelog#" className="footer-link">
                   <Code className="w-4 h-4" /> Changelog
                 </Link>
               </li>
@@ -124,7 +124,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <Link to="/assets" className="footer-link">
+                <Link to="/assets#" className="footer-link">
                   <FileIcon className="w-4 h-4" /> Assets
                 </Link>
               </li>
@@ -140,12 +140,12 @@ function Footer() {
             <h4 className="footer-section-title">Legal</h4>
             <ul className="footer-links">
               <li>
-                <Link to="/imprint" className="footer-link">
+                <Link to="/imprint#" className="footer-link">
                   <FileText className="w-4 h-4" /> Imprint
                 </Link>
               </li>
               <li>
-                <Link to="/rules" className="footer-link">
+                <Link to="/rules#terms" className="footer-link">
                   <Shield className="w-4 h-4" /> Terms
                 </Link>
               </li>
