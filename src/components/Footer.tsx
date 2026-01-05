@@ -159,8 +159,8 @@ function Footer() {
             © {currentYear} CrayonSMP. All rights reserved.
           </p>
           <p className="footer-tagline">
-            <Heart className="w-4 h-4 inline text-[#ff0040]" /> Built with
-            passion for the community
+            <Heart className="w-4 h-4 inline text-[#ff0040]" />
+            Built with passion by the community for the community
           </p>
         </div>
       </div>
