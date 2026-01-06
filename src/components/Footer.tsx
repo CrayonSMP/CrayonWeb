@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import {
   Github,
-  MessageCircle,
   FileText,
   Shield,
   Activity,
@@ -9,8 +8,9 @@ import {
   Home,
   Users,
   Trophy,
-  Pencil, FileIcon, Code,
+  Pencil, FileIcon, Code, YoutubeIcon, InstagramIcon,
 } from "lucide-react";
+import {BsDiscord} from "react-icons/bs";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -44,7 +44,25 @@ function Footer() {
                 className="footer-social-icon"
                 aria-label="Discord"
               >
-                <MessageCircle className="w-5 h-5" />
+                <BsDiscord className="w-5 h-5" />
+              </a>
+              <a
+                  href="https://www.youtube.com/@CrayonSMP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-icon"
+                  aria-label="Discord"
+              >
+                <YoutubeIcon className="w-5 h-5" />
+              </a>
+              <a
+                  href="https://www.instagram.com/crayon_smp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-icon"
+                  aria-label="Discord"
+              >
+                <InstagramIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
