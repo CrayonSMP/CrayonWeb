@@ -107,7 +107,7 @@ function Rules() {
         </section>
 
         {/* Participation Terms Section */}
-        <section className="content-section" data-aos="fade-up">
+        <section id="terms" className="content-section" data-aos="fade-up">
           <div className="content-section-header">
             <Shield className="w-12 h-12 mx-auto mb-4 text-[#3498db]" />
             <h2 className="text-4xl md:text-5xl font-bold mb-4">

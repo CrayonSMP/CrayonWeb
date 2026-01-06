@@ -161,18 +161,13 @@ function Home() {
             </div>
             <div className="content-text-wrapper">
               <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                CrayonSMP isn't just another Minecraft SMP. It's a collaborative
-                canvas where the community holds the brush. We provide the
-                tools, you provide the imagination.
+                CrayonSMP is more than just a Minecraft server – it’s a world shaped by you. Here, you’re not just a player; you’re a creator.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                Build structures, embark on quests, and survive – all while
-                adding your unique touch through custom items and blocks created
-                via NexoMaker.
+                The best part: Everyone can create their own content. Using NexoMaker, you can easily add your own custom items, blocks, and furniture directly to the server. No coding skills required – your ideas go straight into the game.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
-                Experience a truly dynamic and evolving world shaped by its
-                players.
+                Experience a dynamic world that grows every day through the creativity of its community. Don’t just live in the world – help build it!
               </p>
             </div>
           </div>

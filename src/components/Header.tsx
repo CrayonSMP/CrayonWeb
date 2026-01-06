@@ -55,11 +55,11 @@ function Header() {
               <HelpCircle className="w-4 h-4" />
               <span>How it Works</span>
             </a>
-            <Link to="/rules" className="navbar-link">
+            <Link to="/rules#" className="navbar-link">
               <Shield className="w-4 h-4" />
               <span>Rules</span>
             </Link>
-            <Link to="/changelog" className="navbar-link">
+            <Link to="/changelog#" className="navbar-link">
               <Code className="w-4 h-4" />
               <span>Changelog</span>
             </Link>
@@ -67,11 +67,11 @@ function Header() {
               <Code2 className="w-4 h-4" />
               <span>Tech</span>
             </a>
-            <Link to="/pioneers" className="navbar-link">
+            <Link to="/pioneers#" className="navbar-link">
               <Trophy className="w-4 h-4" />
               <span>Pioneers</span>
             </Link>
-            <Link to="/team" className="navbar-link">
+            <Link to="/team#" className="navbar-link">
               <UsersRound className="w-4 h-4" />
               <span>Team</span>
             </Link>
@@ -122,7 +122,7 @@ function Header() {
               <span>How it Works</span>
             </a>
             <Link
-              to="/rules"
+              to="/rules#"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -130,7 +130,7 @@ function Header() {
               <span>Rules</span>
             </Link>
             <Link
-              to="/changelog"
+              to="/changelog#"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -146,7 +146,7 @@ function Header() {
               <span>Tech</span>
             </a>
             <Link
-              to="/pioneers"
+              to="/pioneers#"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -154,7 +154,7 @@ function Header() {
               <span>Pioneers</span>
             </Link>
             <Link
-              to="/team"
+              to="/team#"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >

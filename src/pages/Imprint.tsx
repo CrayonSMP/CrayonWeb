@@ -46,8 +46,13 @@ function Imprint() {
               <div className="imprint-card-content">
                 <p className="text-gray-300 text-lg">
                   Gianni-Finn Grollius
-                  <br />
+                  <br/>
                   Germany
+                  <br/>
+                  <br/>
+                  Sigener str. 43
+                  <br/>
+                  Mammelzen
                 </p>
               </div>
             </div>

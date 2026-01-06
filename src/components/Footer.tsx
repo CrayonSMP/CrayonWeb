@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import {
   Github,
-  MessageCircle,
   FileText,
   Shield,
   Activity,
@@ -9,8 +8,9 @@ import {
   Home,
   Users,
   Trophy,
-  Pencil, FileIcon, Code,
+  Pencil, FileIcon, Code, YoutubeIcon, InstagramIcon,
 } from "lucide-react";
+import {BsDiscord} from "react-icons/bs";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -44,7 +44,25 @@ function Footer() {
                 className="footer-social-icon"
                 aria-label="Discord"
               >
-                <MessageCircle className="w-5 h-5" />
+                <BsDiscord className="w-5 h-5" />
+              </a>
+              <a
+                  href="https://www.youtube.com/@CrayonSMP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-icon"
+                  aria-label="Discord"
+              >
+                <YoutubeIcon className="w-5 h-5" />
+              </a>
+              <a
+                  href="https://www.instagram.com/crayon_smp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-icon"
+                  aria-label="Discord"
+              >
+                <InstagramIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -63,22 +81,22 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="footer-link">
+                <Link to="/team#" className="footer-link">
                   <Users className="w-4 h-4" /> Team
                 </Link>
               </li>
               <li>
-                <Link to="/pioneers" className="footer-link">
+                <Link to="/pioneers#" className="footer-link">
                   <Trophy className="w-4 h-4" /> Pioneers
                 </Link>
               </li>
               <li>
-                <Link to="/rules" className="footer-link">
+                <Link to="/rules#" className="footer-link">
                   <Shield className="w-4 h-4" /> Rules
                 </Link>
               </li>
               <li>
-                <Link to="/changelog" className="footer-link">
+                <Link to="/changelog#" className="footer-link">
                   <Code className="w-4 h-4" /> Changelog
                 </Link>
               </li>
@@ -124,7 +142,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <Link to="/assets" className="footer-link">
+                <Link to="/assets#" className="footer-link">
                   <FileIcon className="w-4 h-4" /> Assets
                 </Link>
               </li>
@@ -140,12 +158,12 @@ function Footer() {
             <h4 className="footer-section-title">Legal</h4>
             <ul className="footer-links">
               <li>
-                <Link to="/imprint" className="footer-link">
+                <Link to="/imprint#" className="footer-link">
                   <FileText className="w-4 h-4" /> Imprint
                 </Link>
               </li>
               <li>
-                <Link to="/rules" className="footer-link">
+                <Link to="/rules#terms" className="footer-link">
                   <Shield className="w-4 h-4" /> Terms
                 </Link>
               </li>
@@ -159,8 +177,8 @@ function Footer() {
             © {currentYear} CrayonSMP. All rights reserved.
           </p>
           <p className="footer-tagline">
-            <Heart className="w-4 h-4 inline text-[#ff0040]" /> Built with
-            passion for the community
+            <Heart className="w-4 h-4 inline text-[#ff0040]" />
+            Built with passion by the community for the community
           </p>
         </div>
       </div>
