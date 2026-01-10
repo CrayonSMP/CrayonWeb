@@ -10,11 +10,13 @@ import Changelog from "./pages/Changelog";
 import Admin from "./pages/admin/Admin";
 import { AuthProvider } from "./context/AuthContext";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
