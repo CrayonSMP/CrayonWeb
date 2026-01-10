@@ -11,6 +11,7 @@ import Admin from "./pages/admin/Admin";
 import { AuthProvider } from "./context/AuthContext";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import Technology from "./pages/Technology.tsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="team" element={<Team />} />
             <Route path="assets" element={<Assets />} />
             <Route path="changelog" element={<Changelog />} />
+            <Route path="technology" element={<Technology />} />
             <Route path="admin/*" element={<Admin />} />
             <Route path="*" element={<NotFound />} />
           </Route>

@@ -53,7 +53,7 @@ function Header() {
               <Code className="w-4 h-4" />
               <span>Changelog</span>
             </Link>
-            <a href="/plugins" className="navbar-link">
+            <a href="/technology" className="navbar-link">
               <Code2 className="w-4 h-4" />
               <span>Tech</span>
             </a>
@@ -112,7 +112,7 @@ function Header() {
               <span>Changelog</span>
             </Link>
             <a
-              href="/plugins"
+              href="/technology"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
