@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   Rocket,
@@ -14,20 +13,8 @@ import {
   Shield,
   Trophy,
 } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      disable: "mobile",
-    });
-  }, []);
-
-
 
   return (
     <>

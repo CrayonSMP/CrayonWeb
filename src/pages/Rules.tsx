@@ -1,17 +1,6 @@
-import { useEffect } from "react";
 import { Shield, ScrollText, Palette } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Rules() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      disable: "mobile",
-    });
-  }, []);
 
   return (
       <>

@@ -27,8 +27,8 @@ function App() {
             <Route path="assets" element={<Assets />} />
             <Route path="changelog" element={<Changelog />} />
             <Route path="admin/*" element={<Admin />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

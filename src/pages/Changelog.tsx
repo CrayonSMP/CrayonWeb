@@ -7,8 +7,6 @@ import {
   GitBranch,
   Loader,
 } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../firebase_prod";
 import {
@@ -33,14 +31,6 @@ const filterCategories: (ChangelogCategory | "All")[] = [
 ];
 
 const Changelog = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      disable: "mobile",
-    });
-  }, []);
 
   const [activeCategory, setActiveCategory] = useState<
     ChangelogCategory | "All"
