@@ -135,16 +135,14 @@ function Home() {
             </h2>
           </div>
           <div className="content-section-grid">
-            <div
-              className="content-image-wrapper"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <img
-                src="/media/CrayonBanner.png"
-                alt="CrayonSMP World"
-                className="content-image"
-              />
+            <div data-aos="zoom-in" data-aos-delay="200">
+             <div className="content-image-wrapper">
+                <img
+                  src="/media/CrayonBanner.png"
+                 alt="CrayonSMP World"
+                 className="content-image"
+                />
+              </div>
             </div>
             <div className="content-text-wrapper">
               <p className="text-lg text-gray-300 leading-relaxed mb-4">
@@ -173,18 +171,12 @@ function Home() {
             </h2>
           </div>
           <div className="content-section-grid content-section-reverse">
-            <div
-              className="content-image-wrapper"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
               <video
                 src="/media/nexomaker.mp4"
                 className="content-image"
                 controls
                 playsInline
               />
-            </div>
             <div className="content-text-wrapper">
               <p className="text-lg text-gray-300 leading-relaxed mb-4">
                 Unleash your inner game designer! With{" "}

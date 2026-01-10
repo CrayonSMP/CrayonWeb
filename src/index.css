@@ -669,23 +669,12 @@ h6 {
   }
 }
 
-.content-image-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.5rem;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-}
-
 .content-image {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 1.5rem;
   transition: transform 0.4s ease;
-}
-
-.content-image-wrapper:hover .content-image {
-  transform: scale(1.05);
 }
 
 .content-text-wrapper {
