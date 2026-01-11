@@ -6,66 +6,67 @@ function Technology() {
         {
             title: "Core Infrastructure",
             icon: Cpu,
-            description: "The heartbeat of CrayonSMP. These systems ensure stability and bridge the gap between vanilla and custom content.",
+            description: "The backbone of the server, providing the framework for custom logic and automated deployment workflows.",
             plugins: [
                 {
-      name: "CraftEngine",
-          url: "https://polymart.org/product/7624/craftengine",
-          icon: "https://images.polymart.org/product/7624/thumbnail.png?t=1745254035&v=3",
-          description: "Our primary framework for custom server logic. It allows us to create complex interactions without the overhead of heavy individual mods.",
-          tag: "Core Framework"
+                    name: "CraftEngine",
+                    url: "https://polymart.org/product/7624/craftengine",
+                    icon: "https://images.polymart.org/product/7624/thumbnail.png?t=1745254035&v=3",
+                    description: "A robust scripting API used to develop custom gameplay features and server-side logic with high performance.",
+                    tag: "Core Framework"
+                },
+                {
+                    name: "GitHub Integration",
+                    url: "https://github.com/CrayonSMP",
+                    icon: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+                    description: "Enables version-controlled configuration management, allowing seamless updates and deployment from remote repositories.",
+                    tag: "DevOps"
+                }
+            ]
         },
         {
-          name: "GitHub Integration",
-          url: "https://github.com/CrayonSMP",
-          icon: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-          description: "Our server configuration is version-controlled. Changes to the world mechanics are reviewed and deployed directly from our repositories.",
-          tag: "DevOps"
-        }
-      ]
-    },
-    {
-      title: "Visuals & Immersion",
-      icon: Layers,
-      description: "We push the boundaries of what's possible in Minecraft with high-fidelity models and seamless asset delivery.",
-      plugins: [
-        {
-          name: "ModelEngine",
-          url: "https://mythiccraft.io/index.php?resources/model-engine",
-          icon: "https://mythiccraft.io/data/resource_icons/1/1213.jpg",
-          description: "Bypasses the 16x16 cube limitation of Minecraft. This allows us to render high-detail 3D entities with complex animations.",
-          tag: "Rendering"
+            title: "Visuals & Immersion",
+            icon: Layers,
+            description: "Tools focused on bypassing vanilla limitations to deliver high-fidelity 3D assets and custom interfaces.",
+            plugins: [
+                {
+                    name: "ModelEngine",
+                    url: "https://mythiccraft.io/index.php?resources/model-engine",
+                    icon: "https://mythiccraft.io/data/resource_icons/1/1213.jpg",
+                    description: "Implements advanced 3D model rendering for entities, supporting complex animations and bone-based structures.",
+                    tag: "Rendering"
+                },
+                {
+                    name: "MythicCrucible",
+                    url: "https://mythiccraft.io/index.php?resources/crucible-custom-items-armor-furniture-blocks-more.2/",
+                    icon: "https://mythiccraft.io/data/resource_icons/0/2.jpg",
+                    description: "A toolkit for designing custom items, placeable furniture, and interactive blocks with unique properties.",
+                    tag: "Assets"
+                }
+            ]
         },
         {
-          name: "MythicCrucible",
-          url: "https://mythiccraft.io/index.php?resources/crucible-custom-items-armor-furniture-blocks-more.2/",
-          icon: "https://mythiccraft.io/data/resource_icons/0/2.jpg",
-          description: "The engine behind our custom UI, furniture, and armor sets. It transforms standard items into unique gameplay assets.",
-          tag: "Assets"
+            title: "Gameplay Mechanics",
+            icon: Box,
+            description: "Systems that define player interaction, entity behavior, and advanced utility functions.",
+            plugins: [
+                {
+                    name: "MythicMobs",
+                    url: "https://mythiccraft.io/index.php?resources/mythicmobs.1/",
+                    icon: "https://mythiccraft.io/data/resource_icons/0/1.jpg",
+                    description: "A powerful mob-creation engine using a scripted skill system to create unique boss fights and custom AI.",
+                    tag: "AI Systems"
+                },
+                {
+                    name: "StorageMechanic",
+                    url: "https://polymart.org/product/2978/storagemechanic",
+                    icon: "https://images.polymart.org/product/2978/thumbnail.png?t=1693450155&v=3",
+                    description: "Provides advanced inventory systems, including specialized containers, portable storage, and GUI-driven sorting.",
+                    tag: "Utility"
+                }
+            ]
         }
-      ]
-    },
-    {
-      title: "Gameplay Mechanics",
-      icon: Box,
-      description: "Dynamic worlds require dynamic actors. These tools populate our world with life and utility.",
-      plugins: [
-        {
-          name: "MythicMobs",
-          url: "https://mythiccraft.io/index.php?resources/mythicmobs.1/",
-          icon: "https://mythiccraft.io/data/resource_icons/0/1.jpg",
-          description: "Powers our custom boss fights and ambient creatures. Every mob has unique AI scripts and skill sets.",
-          tag: "AI Systems"
-        },
-        {
-          name: "StorageMechanic",
-          url: "https://polymart.org/product/2978/storagemechanic",
-          icon: "https://images.polymart.org/product/2978/thumbnail.png?t=1693450155&v=3",
-          description: "Advanced inventory management. Allows for custom chest behaviors, backpacks, and specialized sorting systems.",
-          tag: "Utility"
-        }
-      ]
-    }]
+    ];
 
     return (
         <main className="min-h-screen">
