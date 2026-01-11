@@ -1,4 +1,5 @@
 import { Shield, ScrollText, Palette } from "lucide-react";
+import { serverRules, participationTerms } from "../data/rules";
 
 function Rules() {
 
@@ -33,65 +34,13 @@ function Rules() {
             </div>
 
             <div className="rules-grid">
-              {/* Rule 1: Content Quality */}
-              <div className="rule-card" data-aos="fade-up" data-aos-delay="100">
-                <div className="rule-number">1</div>
-                <h3 className="rule-title">Content & AI</h3>
-                <p className="rule-description">
-                  Submissions must be original or created with AI that meets our quality standards.
-                  Models and textures must show effort – rushed work or low-quality AI spam is not welcome.
-                </p>
-              </div>
-
-              {/* Rule 2: Behavior */}
-              <div className="rule-card" data-aos="fade-up" data-aos-delay="150">
-                <div className="rule-number">2</div>
-                <h3 className="rule-title">Behavior & Safety</h3>
-                <p className="rule-description">
-                  Hate speech, insults, NSFW, or extremist content are strictly prohibited.
-                  All creations must be appropriate for all ages and comply with youth protection laws.
-                </p>
-              </div>
-
-              {/* Rule 3: Style Guide */}
-              <div className="rule-card" data-aos="fade-up" data-aos-delay="200">
-                <div className="rule-number">3</div>
-                <h3 className="rule-title">Visual Style</h3>
-                <p className="rule-description">
-                  Custom designs should follow the official Minecraft Style Guide.
-                  Maintain the blocky, pixel-based aesthetic to ensure visual consistency.
-                </p>
-              </div>
-
-              {/* Rule 4: Gameplay Balance */}
-              <div className="rule-card" data-aos="fade-up" data-aos-delay="250">
-                <div className="rule-number">4</div>
-                <h3 className="rule-title">Gameplay Balance</h3>
-                <p className="rule-description">
-                  All custom mechanics or items must be survival-friendly.
-                  Abilities should be proportional to the difficulty of obtaining the content. No unfair advantages.
-                </p>
-              </div>
-
-              {/* Rule 5: NexoMaker & Credits */}
-              <div className="rule-card" data-aos="fade-up" data-aos-delay="300">
-                <div className="rule-number">5</div>
-                <h3 className="rule-title">Technical Standards</h3>
-                <p className="rule-description">
-                  Content must function correctly without causing lag or crashes.
-                  Use unique file names and reasonable texture sizes (16x/32x).
-                </p>
-              </div>
-
-              {/* Rule 6: Minecraft EULA */}
-              <div className="rule-card" data-aos="fade-up" data-aos-delay="350">
-                <div className="rule-number">6</div>
-                <h3 className="rule-title">Minecraft EULA</h3>
-                <p className="rule-description">
-                  The official Minecraft EULA fully applies. The admin team reserves the right
-                  to modify or remove content for performance or policy reasons.
-                </p>
-              </div>
+              {serverRules.map((rule, index) => (
+                  <div key={index} className="rule-card" data-aos="fade-up" data-aos-delay={100 + index * 50}>
+                    <div className="rule-number">{rule.number}</div>
+                    <h3 className="rule-title">{rule.title}</h3>
+                    <p className="rule-description">{rule.description}</p>
+                  </div>
+              ))}
             </div>
           </section>
 
@@ -108,42 +57,18 @@ function Rules() {
             </div>
 
             <div className="rules-grid">
-              <div className="rule-card highlight-card" data-aos="fade-up" data-aos-delay="100">
-                <div className="rule-number" style={{ backgroundColor: "rgba(52, 152, 219, 0.2)", borderColor: "#3498db", color: "#3498db" }}>1</div>
-                <h3 className="rule-title">Age & Knowledge</h3>
-                <p className="rule-description">
-                  Players must be at least 16 years old. A fundamental understanding of
-                  non-vanilla Minecraft mechanics is expected.
-                </p>
-              </div>
-
-              <div className="rule-card highlight-card" data-aos="fade-up" data-aos-delay="150">
-                <div className="rule-number" style={{ backgroundColor: "rgba(52, 152, 219, 0.2)", borderColor: "#3498db", color: "#3498db" }}>2</div>
-                <h3 className="rule-title">Content Rights Grant</h3>
-                <p className="rule-description">
-                  You retain ownership, but grant CrayonSMP a non-exclusive, royalty-free, and irrevocable
-                  license to use, modify, and distribute your content (builds, models, textures)
-                  within the project and official media.
-                </p>
-              </div>
-
-              <div className="rule-card highlight-card" data-aos="fade-up" data-aos-delay="200">
-                <div className="rule-number" style={{ backgroundColor: "rgba(52, 152, 219, 0.2)", borderColor: "#3498db", color: "#3498db" }}>3</div>
-                <h3 className="rule-title">Recording & Voice Rights</h3>
-                <p className="rule-description">
-                  You grant CrayonSMP the irrevocable right to use audio and video recordings
-                  of your voice and likeness created within the project for publication (YouTube, Twitch, etc.).
-                </p>
-              </div>
-
-              <div className="rule-card highlight-card" data-aos="fade-up" data-aos-delay="250">
-                <div className="rule-number" style={{ backgroundColor: "rgba(52, 152, 219, 0.2)", borderColor: "#3498db", color: "#3498db" }}>4</div>
-                <h3 className="rule-title">Liability & Open Rules</h3>
-                <p className="rule-description">
-                  CrayonSMP is not liable for technical issues or data loss caused by custom content.
-                  Players accept the server's open rules, including occasional griefing.
-                </p>
-              </div>
+              {participationTerms.map((term, index) => (
+                  <div key={index} className="rule-card highlight-card" data-aos="fade-up" data-aos-delay={100 + index * 50}>
+                    <div
+                        className="rule-number"
+                        style={{ backgroundColor: "rgba(52, 152, 219, 0.2)", borderColor: "#3498db", color: "#3498db" }}
+                    >
+                      {term.number}
+                    </div>
+                    <h3 className="rule-title">{term.title}</h3>
+                    <p className="rule-description">{term.description}</p>
+                  </div>
+              ))}
             </div>
           </section>
           {/* Full Documentation Link Section */}
