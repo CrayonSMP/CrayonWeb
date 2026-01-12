@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import {
   MessageCircle,
   Star,
@@ -6,18 +5,8 @@ import {
   Users,
 } from "lucide-react";
 import { contentCreators, members, sponsors } from "../data/pioneers";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Pioneers() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      disable: "mobile",
-    });
-  }, []);
 
 
   return (

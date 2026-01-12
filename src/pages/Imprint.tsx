@@ -1,18 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FileText, Mail, Phone, Scale, Globe } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Imprint() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      disable: "mobile",
-    });
-  }, []);
 
   return (
     <>

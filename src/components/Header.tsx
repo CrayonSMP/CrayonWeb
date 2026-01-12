@@ -4,8 +4,6 @@ import {
   Menu,
   X,
   Rocket,
-  Info,
-  HelpCircle,
   Code2,
   Shield,
   Trophy,
@@ -47,31 +45,23 @@ function Header() {
 
           {/* Desktop Navigation */}
           <div className="navbar-links">
-            <a href="/#about" className="navbar-link">
-              <Info className="w-4 h-4" />
-              <span>About</span>
-            </a>
-            <a href="/#how-it-works" className="navbar-link">
-              <HelpCircle className="w-4 h-4" />
-              <span>How it Works</span>
-            </a>
-            <Link to="/rules#" className="navbar-link">
+            <Link to="/rules" className="navbar-link">
               <Shield className="w-4 h-4" />
               <span>Rules</span>
             </Link>
-            <Link to="/changelog#" className="navbar-link">
+            <Link to="/changelog" className="navbar-link">
               <Code className="w-4 h-4" />
               <span>Changelog</span>
             </Link>
-            <a href="/#plugins" className="navbar-link">
+            <a href="/technology" className="navbar-link">
               <Code2 className="w-4 h-4" />
               <span>Tech</span>
             </a>
-            <Link to="/pioneers#" className="navbar-link">
+            <Link to="/pioneers" className="navbar-link">
               <Trophy className="w-4 h-4" />
               <span>Pioneers</span>
             </Link>
-            <Link to="/team#" className="navbar-link">
+            <Link to="/team" className="navbar-link">
               <UsersRound className="w-4 h-4" />
               <span>Team</span>
             </Link>
@@ -105,24 +95,8 @@ function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="navbar-mobile-menu">
-            <a
-              href="/#about"
-              onClick={closeMobileMenu}
-              className="navbar-mobile-link"
-            >
-              <Info className="w-5 h-5" />
-              <span>About</span>
-            </a>
-            <a
-              href="/#how-it-works"
-              onClick={closeMobileMenu}
-              className="navbar-mobile-link"
-            >
-              <HelpCircle className="w-5 h-5" />
-              <span>How it Works</span>
-            </a>
             <Link
-              to="/rules#"
+              to="/rules"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -130,7 +104,7 @@ function Header() {
               <span>Rules</span>
             </Link>
             <Link
-              to="/changelog#"
+              to="/changelog"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -138,7 +112,7 @@ function Header() {
               <span>Changelog</span>
             </Link>
             <a
-              href="/#plugins"
+              href="/technology"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -146,7 +120,7 @@ function Header() {
               <span>Tech</span>
             </a>
             <Link
-              to="/pioneers#"
+              to="/pioneers"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >
@@ -154,7 +128,7 @@ function Header() {
               <span>Pioneers</span>
             </Link>
             <Link
-              to="/team#"
+              to="/team"
               onClick={closeMobileMenu}
               className="navbar-mobile-link"
             >

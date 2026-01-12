@@ -17,6 +17,7 @@ export default defineConfig({
         imprint: resolve(__dirname, "imprint/index.html"),
         pioneers: resolve(__dirname, "pioneers/index.html"),
         team: resolve(__dirname, "team/index.html"),
+        technology: resolve(__dirname, "technology/index.html"),
         admin: resolve(__dirname, "admin/index.html"),
         "admin/login": resolve(__dirname, "admin/login/index.html"),
         "admin/changelog/editor": resolve(

@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import {
   assetData,
   type AssetItem,
@@ -8,19 +7,8 @@ import {
 
 import { FaDownload, FaFileArchive, FaFilePdf, FaImage } from "react-icons/fa";
 import { FileIcon, FileText } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Assets = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      disable: "mobile",
-    });
-  }, []);
-
   const TypeBadge: React.FC<{ type: AssetType }> = ({ type }) => {
     const colorMap: Record<AssetType, string> = {
       png: "bg-green-500",
