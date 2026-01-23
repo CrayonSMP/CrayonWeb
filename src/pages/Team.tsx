@@ -1,7 +1,15 @@
 import { MessageCircle, Shield, Code, Users } from "lucide-react";
 
-function Team() {
+interface TeamMember {
+  name: string;
+  nickname: string;
+  role: string;
+  image: string;
+  quote: string;
+  color: string;
+}
 
+function Team() {
   const admins = [
     {
       name: "Tamashii",
@@ -37,7 +45,7 @@ function Team() {
     },
   ];
 
-  const team = [];
+  const team: TeamMember[] = [];
 
   return (
     <main className="min-h-screen">
@@ -59,106 +67,108 @@ function Team() {
 
       <div className="container mx-auto px-4 pb-16">
         {/* Administration Section */}
-        { team && <section className="mb-20">
-          <div className="team-section-header" data-aos="fade-up">
-            <Shield className="mt-8 w-8 h-8 text-[#ff0040]" />
-            <h2 className="text-3xl md:text-4xl font-bold">Administration</h2>
-            <p className="text-gray-400 mt-2">
-              Leadership team managing and developing CrayonSMP
-            </p>
-          </div>
+        {team && (
+          <section className="mb-20">
+            <div className="team-section-header" data-aos="fade-up">
+              <Shield className="mt-8 w-8 h-8 text-[#ff0040]" />
+              <h2 className="text-3xl md:text-4xl font-bold">Administration</h2>
+              <p className="text-gray-400 mt-2">
+                Leadership team managing and developing CrayonSMP
+              </p>
+            </div>
 
-          <div className="team-grid">
-            {admins.map((member, index) => (
-              <div
-                key={member.nickname}
-                className="team-card-enhanced"
-                data-aos="zoom-in"
-                data-aos-delay={index * 100}
-              >
+            <div className="team-grid">
+              {admins.map((member, index) => (
                 <div
-                  className="team-card-glow"
-                  style={{ backgroundColor: member.color }}
-                ></div>
-                <div
-                  className="team-card-rank-badge"
-                  style={{ backgroundColor: member.color }}
+                  key={member.nickname}
+                  className="team-card-enhanced"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 100}
                 >
-                  {member.role}
+                  <div
+                    className="team-card-glow"
+                    style={{ backgroundColor: member.color }}
+                  ></div>
+                  <div
+                    className="team-card-rank-badge"
+                    style={{ backgroundColor: member.color }}
+                  >
+                    {member.role}
+                  </div>
+                  <div className="team-card-avatar-wrapper">
+                    <img
+                      src={member.image}
+                      alt={`Profile Picture of ${member.name}`}
+                      className="team-card-avatar"
+                      style={{ borderColor: member.color }}
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src =
+                          "https://placehold.co/120x120/ff0040/ffffff?text=?";
+                      }}
+                    />
+                  </div>
+                  <h3 className="team-card-name">{member.name}</h3>
+                  <p className="team-card-nickname">{member.nickname}</p>
+                  <div className="team-card-divider"></div>
+                  <p className="team-card-quote">"{member.quote}"</p>
                 </div>
-                <div className="team-card-avatar-wrapper">
-                  <img
-                    src={member.image}
-                    alt={`Profile Picture of ${member.name}`}
-                    className="team-card-avatar"
-                    style={{ borderColor: member.color }}
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src =
-                        "https://placehold.co/120x120/ff0040/ffffff?text=?";
-                    }}
-                  />
-                </div>
-                <h3 className="team-card-name">{member.name}</h3>
-                <p className="team-card-nickname">{member.nickname}</p>
-                <div className="team-card-divider"></div>
-                <p className="team-card-quote">"{member.quote}"</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        }
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Team Section */}
-        {team && <section className="mb-20">
-          <div className="team-section-header" data-aos="fade-up">
-            <Code className="w-8 h-8 text-[#75ebee]" />
-            <h2 className="text-3xl md:text-4xl font-bold">Team Members</h2>
-            <p className="text-gray-400 mt-2">
-              Talented contributors making it all possible
-            </p>
-          </div>
+        {team && (
+          <section className="mb-20">
+            <div className="team-section-header" data-aos="fade-up">
+              <Code className="w-8 h-8 text-[#75ebee]" />
+              <h2 className="text-3xl md:text-4xl font-bold">Team Members</h2>
+              <p className="text-gray-400 mt-2">
+                Talented contributors making it all possible
+              </p>
+            </div>
 
-          <div className="team-grid">
-            {team.map((member, index) => (
-              <div
-                key={member.nickname}
-                className="team-card-enhanced"
-                data-aos="zoom-in"
-                data-aos-delay={index * 100}
-              >
+            <div className="team-grid">
+              {team.map((member, index) => (
                 <div
-                  className="team-card-glow"
-                  style={{ backgroundColor: member.color }}
-                ></div>
-                <div
-                  className="team-card-rank-badge"
-                  style={{ backgroundColor: member.color }}
+                  key={member.nickname}
+                  className="team-card-enhanced"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 100}
                 >
-                  {member.role}
+                  <div
+                    className="team-card-glow"
+                    style={{ backgroundColor: member.color }}
+                  ></div>
+                  <div
+                    className="team-card-rank-badge"
+                    style={{ backgroundColor: member.color }}
+                  >
+                    {member.role}
+                  </div>
+                  <div className="team-card-avatar-wrapper">
+                    <img
+                      src={member.image}
+                      alt={`Profile Picture of ${member.name}`}
+                      className="team-card-avatar"
+                      style={{ borderColor: member.color }}
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src =
+                          "https://placehold.co/120x120/75ebee/ffffff?text=?";
+                      }}
+                    />
+                  </div>
+                  <h3 className="team-card-name">{member.name}</h3>
+                  <p className="team-card-nickname">{member.nickname}</p>
+                  <div className="team-card-divider"></div>
+                  <p className="team-card-quote">"{member.quote}"</p>
                 </div>
-                <div className="team-card-avatar-wrapper">
-                  <img
-                    src={member.image}
-                    alt={`Profile Picture of ${member.name}`}
-                    className="team-card-avatar"
-                    style={{ borderColor: member.color }}
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src =
-                        "https://placehold.co/120x120/75ebee/ffffff?text=?";
-                    }}
-                  />
-                </div>
-                <h3 className="team-card-name">{member.name}</h3>
-                <p className="team-card-nickname">{member.nickname}</p>
-                <div className="team-card-divider"></div>
-                <p className="team-card-quote">"{member.quote}"</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        }
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Join CTA */}
         <section className="section-card text-center" data-aos="fade-up">
