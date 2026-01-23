@@ -37,8 +37,7 @@ function Team() {
     },
   ];
 
-  const team = [
-  ];
+  const team = [];
 
   return (
     <main className="min-h-screen">
@@ -60,7 +59,7 @@ function Team() {
 
       <div className="container mx-auto px-4 pb-16">
         {/* Administration Section */}
-        <section className="mb-20">
+        { team && <section className="mb-20">
           <div className="team-section-header" data-aos="fade-up">
             <Shield className="mt-8 w-8 h-8 text-[#ff0040]" />
             <h2 className="text-3xl md:text-4xl font-bold">Administration</h2>
@@ -108,9 +107,10 @@ function Team() {
             ))}
           </div>
         </section>
+        }
 
         {/* Team Section */}
-        <section className="mb-20">
+        {team && <section className="mb-20">
           <div className="team-section-header" data-aos="fade-up">
             <Code className="w-8 h-8 text-[#75ebee]" />
             <h2 className="text-3xl md:text-4xl font-bold">Team Members</h2>
@@ -158,6 +158,7 @@ function Team() {
             ))}
           </div>
         </section>
+        }
 
         {/* Join CTA */}
         <section className="section-card text-center" data-aos="fade-up">
