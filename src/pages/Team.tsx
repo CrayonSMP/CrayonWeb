@@ -38,14 +38,6 @@ function Team() {
   ];
 
   const team = [
-    {
-      name: "ezTxmMC",
-      nickname: "@eztxmmc",
-      role: "Developer",
-      image: "/media/team-pf/ezTxmMC.png",
-      quote: "Developing...",
-      color: "#33caca",
-    },
   ];
 
   return (
