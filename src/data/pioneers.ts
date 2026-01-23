@@ -40,36 +40,6 @@ export const contentCreators = [
     ],
   },
   {
-    name: "ezTxmMC",
-    nickname: "@eztxmmc",
-    role: "YouTuber",
-    image: "/media/team-pf/ezTxmMC.png",
-    quote: "Developing and also playing...",
-    color: "#9735f2",
-    socials: [
-      {
-        icon: Twitch,
-        url: "https://www.twitch.tv/eztxmmc",
-        label: "Twitch",
-      },
-      {
-        icon: Youtube,
-        url: "https://www.youtube.com/@ezTxmMC",
-        label: "YouTube",
-      },
-      {
-        icon: Globe,
-        url: "https://eztxm.de",
-        label: "Website",
-      },
-      {
-        icon: CodeIcon,
-        url: "https://modrinth.com/user/ezTxmMC",
-        label: "Minecraft Addons",
-      },
-    ],
-  },
-  {
     name: "Giannicraft",
     nickname: "@Giannicrafter",
     role: "Streamer",
