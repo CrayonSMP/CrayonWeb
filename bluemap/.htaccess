@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Echte Dateien (assets, lang, index.html) direkt ausliefern,
+# alles andere (/, /maps/...) an sql.php weiterreichen
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ sql.php [L,QSA]
